@@ -1,0 +1,20 @@
+# Credit Risk Analysis
+
+## Overview
+
+* Purpose: The purpose of this analysis is to determine the credit risk of each loan and classify them accordingly
+
+* Background: Data provided was both loan and borrower sepecific, including `loan size`, `borrower income`, `interest rates`, and `debt to income ratio`
+
+* Processes used:
+  * The original data sample provided was split into two types: `training data` and `testing data`
+    * Training data: Used to train the model based on labels/targets already provkded in the data
+    * Testing data: acquired from the original data to be used after the model is built to test the accuracy and pricision of the           model built
+  * Using the `Training Data` a `Logistic Regression` model was built and trained using the `SciKit-learn` library
+ 
+## Results
+
+* The classification report identifies that:
+    * `100%` pecision and `99%` recall for class_1
+    * `84%` precision and `94%` recall for class_2
+    * The model demonstrates an excellent overall accuracy of `99%`, though the performance on class_2 is noteablly weaker. this            could be beacuse of difference in size (only 619 examples compared to 18,765 examples for class_1)
